@@ -1,19 +1,9 @@
 {
   "compilerOptions": {
     "composite": true,
-    "skipLibCheck": true,
     "module": "ESNext",
-    "importHelpers": true,
-    "esModuleInterop": true,
-    "moduleResolution": "node",
-    "allowSyntheticDefaultImports": true,
-    "allowImportingTsExtensions": true,
-    "strict": true,
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["src/*"]
-    }
+    "moduleResolution": "Node",
+    "allowSyntheticDefaultImports": true
   },
-  "include": ["vite.config.ts", "src", "src/**/*.tsx"],
-  "exclude": ["node_modules"]
+  "include": ["vite.config.ts"]
 }

@@ -80,7 +80,7 @@ const PokemonCard = ({
   };
 
   const handleClickRedirect = () => {
-    navigate(`/pokemon/${pokemonId}`);
+    navigate(`/PokeForge/pokemon/${pokemonId}`);
   };
 
   if (isLoading) {

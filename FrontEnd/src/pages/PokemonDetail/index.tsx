@@ -6,7 +6,7 @@ function PokemonDetail() {
   const navigate = useNavigate();
 
   const handleGoBack = () => {
-    navigate("/");
+    navigate("/PokeForge/");
   };
 
   return (

@@ -7,6 +7,7 @@
 <p align="center">
     <a href="#sobre">Sobre</a> • 
     <a href="#features">Features</a> • 
+    <a href="#imagens">Imagens</a> • 
     <a href="#demo">Demo</a> • 
     <a href="#tecnologias">Tecnologias</a> • 
     <a href="#licenca">Lincença</a> • 
@@ -26,7 +27,7 @@ O "PokeForge" é uma plataforma desenvolvida com Vite e React.js, integrando Doc
 
 ### Imagens
 <h1 align="center">
-    <img alt="Readme" title="Readme PokeTeam" src="./FrontEnd/PokeTeam.png" />
+    <img alt="Readme" title="Readme PokeTeam" src="./FrontEnd/pokeTeam.png" />
 </h1>
 <h1 align="center">
     <img alt="Readme" title="Readme PokeDetails" src="./FrontEnd/PokeDetails.png" />
@@ -37,6 +38,9 @@ O "PokeForge" é uma plataforma desenvolvida com Vite e React.js, integrando Doc
 <sub>(Preview)</sub>
 </p>
 
+### Demo
+
+https://guilherme-devcode.github.io/PokeForge/
 
 ### Tecnologias
 
@@ -44,28 +48,22 @@ As seguintes ferramentas 🛠 foram usadas na construção do projeto:
 
 <table>
     <tr>
-        <td><a href="https://www.javascript.com/">Javascript</a></td>
-        <td><a href="https://pt-br.reactjs.org/">ReactJs</a></td>
-        <td><a href="https://developers.facebook.com/">Api do Facebook</a></td>
-        <td><a href="https://firebase.google.com/?hl=pt">Firebase</a></td>
-        <td><a href="https://mui.com/pt/">MaterialUI</a></td>
+        <td><a href="https://www.javascript.com/">ViteJS</a></td>
+        <td><a href="https://pt-br.reactjs.org/">Hasura</a></td>
+        <td><a href="https://developers.facebook.com/">Docker</a></td>
+        <td><a href="https://firebase.google.com/?hl=pt">PostgreSQL</a></td>
     </tr>
     <tr>
-        <td>ECMAScript 2018</td>
-        <td>17.0.2*</td>
-        <td>12.0*</td>
-        <td>10.0.1*</td>
-        <td>5.2.8*</td>
+        <td>5.2.0</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
     </tr>
 </table>
 
 ### Licenca
 
-O Clone do Whatsapp é um software de código aberto licenciado sob a [MIT license](http://opensource.org/licenses/MIT).
-
-### Referencias
-
-Dedicação ao canal https://www.youtube.com/channel/UCw9mYSlqKRXI6l4vH-tAYpQ 
+O PokeForge é um software de código aberto licenciado sob a [MIT license](http://opensource.org/licenses/MIT).
 
 ### Autor
 

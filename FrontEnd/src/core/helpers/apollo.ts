@@ -8,7 +8,7 @@ import { setContext } from "@apollo/client/link/context";
 import { onError } from "@apollo/client/link/error";
 
 const httpLink = createHttpLink({
-  uri: 'http://localhost:8080/v1/graphql',
+  uri: 'https://bold-midge-68.hasura.app/v1/graphql',
 });
 
 const authLink = setContext((_, { headers }) => {

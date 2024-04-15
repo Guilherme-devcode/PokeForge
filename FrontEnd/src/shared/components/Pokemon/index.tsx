@@ -4,8 +4,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import api, { getPokemonImageUrl } from "../../services/PokeApi/api";
 
-import React from "react";
-import { PokeballLoader } from "../spinner/index";
+import { PokeballLoader } from "../spinner";
 import { Badge } from "./style";
 import "./style.css";
 

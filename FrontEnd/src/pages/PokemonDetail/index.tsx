@@ -1,7 +1,6 @@
-import React from "react";
 import { IoIosReturnLeft } from "react-icons/io";
 import { useNavigate } from "react-router-dom";
-import Pokemon from "../../shared/components/Pokemon/index";
+import Pokemon from "../../shared/components/Pokemon";
 
 function PokemonDetail() {
   const navigate = useNavigate();

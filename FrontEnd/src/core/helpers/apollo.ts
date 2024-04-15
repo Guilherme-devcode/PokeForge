@@ -8,15 +8,15 @@ import { setContext } from "@apollo/client/link/context";
 import { onError } from "@apollo/client/link/error";
 
 const httpLink = createHttpLink({
-  uri: 'https://bold-midge-68.hasura.app/v1/graphql',
+  uri: "https://bold-midge-68.hasura.app/v1/graphql",
 });
 
 const authLink = setContext((_, { headers }) => {
-  const token = localStorage.getItem("token");
   return {
     headers: {
       ...headers,
-      Authorization: token ? `Bearer ${token}` : "",
+      "x-hasura-admin-secret":
+        "qAO9cHhNc7zNBrrVzn6hy8ranDeIJ99cvKgka1m9Gg2e9bFH2a25DfxIG2ETRlNG",
     },
   };
 });

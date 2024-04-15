@@ -1,4 +1,3 @@
-import React from "react";
 import { PokeBallLoaderStyle } from "./style";
 
 export const PokeballLoader = () => {

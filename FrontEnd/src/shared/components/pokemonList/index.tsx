@@ -3,9 +3,9 @@ import { Pagination, PaginationItemProps } from "semantic-ui-react";
 import api from "../../services/PokeApi/api";
 
 import { IPokemon } from "../../interfaces/pokemon";
-import PokemonCard from "../PokemonCard";
-import Search from "../Search";
-import { PokeballLoader } from "../spinner";
+import PokemonCard from "../PokemonCard/index";
+import Search from "../Search/index";
+import { PokeballLoader } from "../spinner/index";
 import { App, PaginationContainer } from "./style";
 
 const PokemonList = ({ updatePokemonTeam }: { updatePokemonTeam: () => void }) => {

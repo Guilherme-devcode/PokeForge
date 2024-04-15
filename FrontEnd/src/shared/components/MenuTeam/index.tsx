@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { IPokemon } from "../../interfaces/pokemon";
 import PokemonService from "../../services/PokemonService/pokemon.service";
-import PokemonCard from "../PokemonCard";
+import PokemonCard from "../PokemonCard/index";
 import { MenuTeamStyle } from "./style";
 
 const pokemonService = new PokemonService();

@@ -24,10 +24,14 @@ O "PokeForge" é uma plataforma desenvolvida com Vite e React.js, integrando Doc
 - [x] Ver detalhes dos Pokémons
 
 
-### Demo
+### Imagens
 <h1 align="center">
-    <img alt="Catalogo de Cursos" title="Catalogo de Cursos" src="./2022-01-13-18-49-36.gif" />
+    <img alt="Readme" title="Readme PokeTeam" src="./FrontEnd/PokeTeam.png" />
 </h1>
+<h1 align="center">
+    <img alt="Readme" title="Readme PokeDetails" src="./FrontEnd/PokeDetails.png" />
+</h1>
+
 
 <p align="right">
 <sub>(Preview)</sub>

@@ -1,5 +1,5 @@
 <p align="center">
-    <img alt="Readme" title="Readme GIF" src="./wpp.png" />
+    <img alt="Readme" title="Readme title" src="./Project.png" />
 </p>
 
 <h1 align="center">PokeForge</h1>

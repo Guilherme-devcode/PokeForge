@@ -3,6 +3,7 @@
     "composite": true,
     "skipLibCheck": true,
     "module": "ESNext",
+    "esModuleInterop": true,
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
     "strict": true

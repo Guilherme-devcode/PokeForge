@@ -22,7 +22,8 @@
     "semantic-ui-react": "^2.1.5",
     "styled-components": "^6.1.8",
     "sweetalert2": "^11.10.7",
-    "vanilla-tilt": "^1.8.1"
+    "vanilla-tilt": "^1.8.1",
+    "vite-tsconfig-paths": "^4.3.2"
   },
   "devDependencies": {
     "@types/react": "^18.2.78",

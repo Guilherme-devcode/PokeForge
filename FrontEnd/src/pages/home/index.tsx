@@ -1,5 +1,6 @@
 import { useState } from "react";
 import logo from "../../assets/logo.png";
+
 import MenuTeam from "../../shared/components/MenuTeam";
 import PokemonList from "../../shared/components/PokemonList";
 import { HomeStyle } from "./style";

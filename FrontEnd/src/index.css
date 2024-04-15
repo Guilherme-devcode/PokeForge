@@ -5,5 +5,16 @@
 body {
   margin: 0;
   padding: 0;
- background-image: linear-gradient(#f2f3f7, #f2f3f7);
+  background-image: linear-gradient(#f2f3f7, #f2f3f7);
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  right: 5px;
+  position: absolute;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #EE0000;
+  border-radius: 10px;
 }

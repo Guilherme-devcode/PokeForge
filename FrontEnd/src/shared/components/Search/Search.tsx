@@ -1,21 +1,21 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import { useState } from "react";
+import { ISearchProps } from "../../interfaces/search";
 
-const Search = (getQuery: any) => {
-  const [text, setText] = useState("");
+const Search: React.FC<ISearchProps> = ({ getQuery }) => {
+  const [text, setText] = useState<string>("");
 
-  const onChange = (q: any) => {
+  const onChange = (q: string) => {
     setText(q);
     getQuery(q);
   };
 
   return (
-    <section className="search">
+    <section className="search d-flex justify-content-center align-items-center w-100 mb-4">
       <form>
         <input
           type="text"
           className="form-control"
-          placeholder="Search Pokemon"
+          placeholder="Buscar pokemon"
           value={text}
           onChange={(e) => onChange(e.target.value)}
           autoFocus

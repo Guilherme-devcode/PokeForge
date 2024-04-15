@@ -5,7 +5,8 @@ export const CardName = styled.h1`
   text-transform: capitalize;
   font-size: 2rem;
   font-weight: 700;
-  width: 170px;
+  width: 100%;
+  text-align: center;
 `;
 
 export const CardImg = styled.img`
@@ -36,6 +37,7 @@ export const StyledLink = styled(Link)`
 `;
 
 export const Card = styled.div`
+  position: relative;
   width: 12rem auto;
   background: #f2f3f7;
   color: #e4c439;
@@ -215,6 +217,19 @@ export const Card = styled.div`
     border-color: #fa58f4;
     &:hover {
       background-color: #f781d8;
+    }
+  }
+
+  .add-to-pokedex {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    opacity: 0;
+    transition: 0.25s;
+  }
+  &:hover {
+    .add-to-pokedex {
+      opacity: 1;
     }
   }
 `;

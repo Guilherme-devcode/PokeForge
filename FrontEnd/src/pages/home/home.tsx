@@ -1,5 +1,5 @@
 import logo from "../../assets/logo.png";
-import PokemonList from "../../shared/components/pokemonList/PokemonList";
+import PokemonList from "../../shared/components/PokemonList/PokemonList";
 import { HomeStyle } from "./style";
 
 function Home() {

@@ -2,7 +2,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import api, { getPokemonImageUrl } from "../../services/api";
+import api, { getPokemonImageUrl } from "../../services/PokeApi/api";
 
 import { PokeballLoader } from "../spinner/Spinner";
 import { Badge } from "./style";

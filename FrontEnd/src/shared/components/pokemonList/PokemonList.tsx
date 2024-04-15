@@ -1,9 +1,9 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import { useEffect, useState } from "react";
-import { Pagination } from "semantic-ui-react";
-import api from "../../services/api";
+import { Pagination, PaginationItemProps } from "semantic-ui-react";
+import api from "../../services/PokeApi/api";
 
-import PokemonCard from "../pokemonCard/PokemonCard";
+import { IPokemon } from "../../interfaces/pokemon";
+import PokemonCard from "../PokemonCard/PokemonCard";
 import Search from "../Search/Search";
 import { PokeballLoader } from "../spinner/Spinner";
 import { App, PaginationContainer } from "./style";
@@ -28,31 +28,27 @@ const PokemonList = () => {
     fetchPokemons();
   }, [currentPage, pokemonPerPage]);
 
-  const onPaginationClick = (_e: any, pageInfo: any) => {
+  const onPaginationClick = (_e: unknown, pageInfo: PaginationItemProps) => {    
     setCurrentPage(pageInfo.activePage * pokemonPerPage - pokemonPerPage);
   };
 
   const totalPage = Math.ceil(totalPokemon / pokemonPerPage);
 
   const renderPokemonsList = () => {
-    const pokemonsList: JSX.Element[] = [];
+    const filteredPokemons = pokemons.filter((pokemon: IPokemon) =>
+      pokemon.name.toLowerCase().includes(query.toLowerCase())
+    );
 
-    pokemons.forEach((pokemon: any) => {
-      if (!pokemon.name.includes(query)) {
-        return;
-      }      
-      pokemonsList.push(<PokemonCard key={pokemon.name} pokemon={pokemon} />);
-    });
-
-    return pokemonsList;
+    return filteredPokemons.map((pokemon: IPokemon) => (
+      <PokemonCard key={pokemon.name} pokemon={pokemon} />
+    ));
   };
 
   return isLoading ? (
     <PokeballLoader />
   ) : (
     <>
-      <Search getQuery={(q: any) => setQuery(q)} />
-
+      <Search getQuery={(q: string) => setQuery(q)} />
       <PaginationContainer>
         <Pagination
           defaultActivePage={1}

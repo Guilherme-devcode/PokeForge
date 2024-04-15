@@ -8,7 +8,7 @@ import Search from "../Search/Search";
 import { PokeballLoader } from "../spinner/Spinner";
 import { App, PaginationContainer } from "./style";
 
-const PokemonList = () => {
+const PokemonList = ({ updatePokemonTeam }: { updatePokemonTeam: () => void }) => {
   const [pokemons, setPokemons] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [totalPokemon] = useState(807);
@@ -28,7 +28,7 @@ const PokemonList = () => {
     fetchPokemons();
   }, [currentPage, pokemonPerPage]);
 
-  const onPaginationClick = (_e: unknown, pageInfo: PaginationItemProps) => {    
+  const onPaginationClick = (_e: unknown, pageInfo: PaginationItemProps) => {
     setCurrentPage(pageInfo.activePage * pokemonPerPage - pokemonPerPage);
   };
 
@@ -40,7 +40,13 @@ const PokemonList = () => {
     );
 
     return filteredPokemons.map((pokemon: IPokemon) => (
-      <PokemonCard key={pokemon.name} pokemon={pokemon} />
+      <PokemonCard
+        hasAddButton={true}
+        key={pokemon.name}
+        updatePokemonTeam={updatePokemonTeam}
+        pokemon={pokemon}
+        hasRemoveButton={false}
+      />
     ));
   };
 

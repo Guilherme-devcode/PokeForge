@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import logo from "../../assets/logo.png";
 import MenuTeam from "../../shared/components/MenuTeam/index";
 import PokemonList from "../../shared/components/PokemonList/index";

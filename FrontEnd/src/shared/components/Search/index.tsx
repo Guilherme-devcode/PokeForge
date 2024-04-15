@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { ISearchProps } from "../../interfaces/search";
 
 const Search: React.FC<ISearchProps> = ({ getQuery }) => {

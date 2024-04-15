@@ -2,13 +2,18 @@ import { useEffect, useState } from "react";
 import { Pagination, PaginationItemProps } from "semantic-ui-react";
 import api from "../../services/PokeApi/api";
 
+import React from "react";
 import { IPokemon } from "../../interfaces/pokemon";
 import PokemonCard from "../PokemonCard/index";
 import Search from "../Search/index";
 import { PokeballLoader } from "../spinner/index";
 import { App, PaginationContainer } from "./style";
 
-const PokemonList = ({ updatePokemonTeam }: { updatePokemonTeam: () => void }) => {
+const PokemonList = ({
+  updatePokemonTeam,
+}: {
+  updatePokemonTeam: () => void;
+}) => {
   const [pokemons, setPokemons] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [totalPokemon] = useState(807);

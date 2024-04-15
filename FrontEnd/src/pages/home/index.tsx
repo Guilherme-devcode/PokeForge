@@ -1,7 +1,7 @@
 import { useState } from "react";
 import logo from "../../assets/logo.png";
-import MenuTeam from "../../shared/components/MenuTeam/MenuTeam";
-import PokemonList from "../../shared/components/PokemonList/PokemonList";
+import MenuTeam from "../../shared/components/MenuTeam";
+import PokemonList from "../../shared/components/PokemonList";
 import { HomeStyle } from "./style";
 
 function Home() {

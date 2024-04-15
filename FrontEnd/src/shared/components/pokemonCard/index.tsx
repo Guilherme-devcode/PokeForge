@@ -10,7 +10,7 @@ import { IPokemon } from "../../interfaces/pokemon";
 import { MessageServices } from "../../services/alerts/alerts.service";
 import { getPokemonGifUrl } from "../../services/PokeApi/api";
 import PokemonService from "../../services/PokemonService/pokemon.service";
-import { PokeballLoader } from "../spinner/Spinner";
+import { PokeballLoader } from "../spinner";
 import { Card, CardDetails, CardId, CardImg, CardName } from "./style";
 
 const PokemonCard = ({
